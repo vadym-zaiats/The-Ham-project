@@ -136,9 +136,6 @@ a {
 }
 
 .section-3-header {
-}
-
-.section-3-header {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -190,6 +187,7 @@ a {
   font-size: 16px;
   line-height: 39px;
   color: #717171;
+  border: 1px solid #edefef;
 }
 
 img[src*="wordpress1.jpg"] {
@@ -266,15 +264,12 @@ img[src*="wordpress1.jpg"] {
   padding: 98px 380px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: baseline;
   align-items: center;
 }
 
 .section-5-header {
   position: relative;
-}
-
-.section-5-header {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
@@ -298,4 +293,33 @@ img[src*="wordpress1.jpg"] {
   border-bottom: 1px solid #18cfab;
   top: 63px;
   left: 148px;
+}
+
+.section-5-tabs {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 2fr 2.5fr 2fr;
+  margin-top: 90px;
+
+  border: 1px solid #dadada;
+}
+.tabs-section-5 {
+  background-color: #f8fcfe;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 39px;
+  color: #717171;
+  border: 1px solid #dadada;
+}
+
+.tabs-section-5:hover {
+  border: 1px solid #18cfab;
+  color: #18cfab;
 }
