@@ -91,7 +91,7 @@ a {
   margin-top: 22px;
 }
 
-.some {
+.buttons-1-container {
   margin-top: 122px;
 }
 
@@ -189,6 +189,10 @@ a {
   color: #717171;
   border: 1px solid #edefef;
 }
+.tabs-title:hover {
+  border: 1.5px solid #18cfab;
+  cursor: pointer;
+}
 
 img[src*="wordpress1.jpg"] {
   width: 194px;
@@ -258,7 +262,7 @@ img[src*="wordpress1.jpg"] {
 
 .section-5 {
   max-width: 1920px;
-  height: 1212px;
+  /* height: 1300px; */
   background: #e9edef;
   /*  */
   padding: 98px 380px;
@@ -322,4 +326,61 @@ img[src*="wordpress1.jpg"] {
 .tabs-section-5:hover {
   border: 1px solid #18cfab;
   color: #18cfab;
+  cursor: pointer;
+}
+.grid-section-5 {
+  margin-top: 69px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.image-section-5 {
+  width: 100%;
+  height: 100%;
+}
+
+.section-5-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 5px;
+  width: 168px;
+  height: 63px;
+  background: #18cfab;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.section-6 {
+  height: 960px;
+  padding: 85px 380px 130px 390px;
+}
+.section-6-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #4e4e4e;
+  position: relative;
+}
+.section-6-header::before {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 57px;
+  left: 51px;
+}
+.section-6-header::after {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 63px;
+  left: 83px;
 }
