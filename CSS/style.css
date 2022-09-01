@@ -483,8 +483,8 @@ img[src*="wordpress1.jpg"] {
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
-  top: 57px;
-  left: 249px;
+  top: 60px;
+  left: 241px;
 }
 .section-7-header::after {
   display: block;
@@ -492,11 +492,12 @@ img[src*="wordpress1.jpg"] {
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
-  top: 63px;
-  left: 268px;
+  top: 66px;
+  left: 260px;
 }
 
 .section-7-text {
+  text-align: center;
   margin-top: 175px;
   font-family: "Montserrat";
   font-style: normal;
@@ -513,7 +514,7 @@ img[src*="wordpress1.jpg"] {
   content: url("../img/shape-2474.png");
   position: absolute;
   top: -60px;
-  left: 550px;
+  left: 525px;
 }
 .section-7-name {
   font-family: "Montserrat";
@@ -532,4 +533,52 @@ img[src*="wordpress1.jpg"] {
   font-size: 13px;
   color: #bbbbbb;
   margin-top: 17px;
+}
+
+.main-photo {
+  margin-top: 55px;
+  border-radius: 100px;
+  border: 11px solid rgba(31, 218, 181, 0.2);
+}
+
+.carousel {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-photo {
+  margin: 0 15px;
+  border-radius: 100px;
+  border: 5px solid rgba(31, 218, 181, 0.2);
+}
+
+.carousel-photo:hover {
+  cursor: pointer;
+}
+
+.arrow-back,
+.arrow-forward {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bbbbbb;
+  height: 31px;
+  width: 31px;
+  border: 1px solid #bbbbbb;
+}
+.arrow-back {
+  padding-right: 8px;
+  margin-right: 25px;
+}
+.arrow-forward {
+  padding-left: 8px;
+  margin-left: 25px;
+}
+.arrow-back:hover,
+.arrow-forward:hover {
+  background: #18cfab;
+  color: #fff;
+  border: 1px solid #18cfab;
 }
