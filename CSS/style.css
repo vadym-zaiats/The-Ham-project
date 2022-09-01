@@ -149,8 +149,8 @@ a {
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
-  top: 57px;
-  left: 51px;
+  top: 59px;
+  left: 66px;
 }
 .section-3-header::after {
   display: block;
@@ -158,8 +158,8 @@ a {
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
-  top: 63px;
-  left: 83px;
+  top: 65px;
+  left: 98px;
 }
 
 .section-3-tabs {
@@ -381,7 +381,7 @@ img[src*="wordpress1.jpg"] {
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
-  top: 57px;
+  top: 55px;
   left: 81px;
 }
 .section-6-header::after {
