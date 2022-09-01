@@ -353,6 +353,9 @@ img[src*="wordpress1.jpg"] {
   background: #18cfab;
   text-transform: uppercase;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .section-6 {
   height: 958px;
