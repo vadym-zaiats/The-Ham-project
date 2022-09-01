@@ -357,6 +357,9 @@ img[src*="wordpress1.jpg"] {
   align-items: center;
   justify-content: space-evenly;
 }
+.section-5-button:hover {
+  cursor: pointer;
+}
 .section-6 {
   height: 958px;
   padding: 84px 380px 130px 390px;
@@ -404,6 +407,9 @@ img[src*="wordpress1.jpg"] {
 
 .grid-item-6-section {
   position: relative;
+}
+.grid-item-6-section:hover {
+  cursor: pointer;
 }
 .grid-item-6-section:hover .feb-12 {
   background: #18cfab;
