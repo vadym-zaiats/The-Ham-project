@@ -169,6 +169,7 @@ a {
 }
 
 .section-3-content {
+  width: 100%;
   height: 240px;
   overflow: hidden;
 }
@@ -202,20 +203,26 @@ img[src*="wordpress1.jpg"] {
   display: flex;
 }
 
-.section-3-tabs-text {
-  margin-left: 50px;
+.tabs-item {
+  text-align: left;
+  margin-left: 10px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
   color: #777777;
+  display: none;
+}
+
+.tabs-item.active {
+  display: block;
 }
 
 .section-4 {
   max-width: 1920px;
   height: 476px;
-  background: url("../img/Layer\ 21\ 1.png");
+  background: url("../img/section-4.png");
   /*  */
   display: flex;
   justify-content: center;
