@@ -407,11 +407,8 @@ a {
   overflow: hidden;
 }
 
-.hide {
-  display: none;
-}
-
 .grid-section-5-more {
+  height: 618px;
   margin-top: 69px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;

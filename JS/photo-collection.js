@@ -43,5 +43,3 @@ function getImages(className) {
     }
   });
 }
-
-document.querySelector(".tabs-title").click();
