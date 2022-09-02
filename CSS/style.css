@@ -202,6 +202,54 @@ a {
   background-color: #18cfab;
   color: #fff;
 }
+
+.tringle1:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  left: 85px;
+}
+.tringle2:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  left: 280px;
+}
+
+.tringle3:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  left: 475px;
+}
+
+.tringle4:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  right: 470px;
+}
+
+.tringle5:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  right: 275px;
+}
+
+.tringle6:after {
+  display: block;
+  content: url("../img/Rectangle-3-section.png");
+  position: absolute;
+  top: 59px;
+  right: 84px;
+}
+
 /* .tabs-title.active::after {
   display: block;
   content: url("../img/Rectangle-3-section.png");
@@ -209,12 +257,13 @@ a {
   top: 59px;
   left: 85px;
 } */
-img[src*="wordpress1.jpg"] {
-  width: 194px;
-  height: 139px;
-}
 .section-3-content div {
   display: flex;
+}
+
+.image-section-3 {
+  height: 139px;
+  width: 194px;
 }
 
 .tabs-item {
