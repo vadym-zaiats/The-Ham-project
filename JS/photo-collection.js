@@ -10,10 +10,17 @@ button.addEventListener("click", () => {
 
 const parentEl = document.querySelector(".section-5-tabs");
 const items = document.querySelectorAll(".image-section-5");
+const tabs = document.querySelectorAll(".tabs-section-5");
 
 parentEl.addEventListener("click", (item) => {
+  let someW = item.target;
   let currentItem = item.target.dataset.item;
-  console.log(currentItem);
+  if (!someW.classList.contains("active")) {
+    tabs.forEach(function (item) {
+      item.classList.remove("active");
+    });
+    someW.classList.add("active");
+  }
 
   switch (currentItem) {
     case "all":
