@@ -5,11 +5,8 @@ const items = document.querySelectorAll(".tabs-item");
 
 parentEl.addEventListener("click", (e) => {
   let currentItem = e.target;
-  console.log(currentItem);
   let itemId = currentItem.getAttribute("data-item");
-  console.log(itemId);
   let currentTab = document.querySelector(itemId);
-  console.log(currentTab);
   if (!currentItem.classList.contains("active")) {
     tabs.forEach(function (item) {
       item.classList.remove("active");

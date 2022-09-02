@@ -393,16 +393,18 @@ a {
   border: 1px solid #dadada;
 }
 
-.tabs-section-5:hover {
+.tabs-section-5.active {
   border: 1px solid #18cfab;
   color: #18cfab;
   cursor: pointer;
 }
 .grid-section-5 {
+  height: 618px;
   margin-top: 69px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
 }
 
 .hide {
