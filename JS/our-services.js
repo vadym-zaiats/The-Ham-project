@@ -2,7 +2,7 @@
 const parentEl = document.querySelector(".section-3-tabs");
 const tabs = document.querySelectorAll(".tabs-title");
 const items = document.querySelectorAll(".tabs-item");
-let imgThirdSect = document.querySelector(".image-section-3");
+
 parentEl.addEventListener("click", (e) => {
   let currentItem = e.target;
   console.log(currentItem);
