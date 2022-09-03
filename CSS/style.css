@@ -201,60 +201,16 @@ a {
 .tabs-title.active {
   background-color: #18cfab;
   color: #fff;
+  position: relative;
 }
-.tringle1:after {
+
+.tabs-title.active::after {
   display: block;
   content: url("../img/Rectangle-3-section.png");
   position: absolute;
   top: 59px;
   left: 85px;
 }
-.tringle2:after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  left: 280px;
-}
-.tringle3:after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  left: 475px;
-}
-
-.tringle4:after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  right: 470px;
-}
-
-.tringle5:after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  right: 275px;
-}
-
-.tringle6:after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  right: 84px;
-}
-
-/* .tabs-title.active::after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  left: 85px;
-} */
 .section-3-content div {
   display: flex;
 }
