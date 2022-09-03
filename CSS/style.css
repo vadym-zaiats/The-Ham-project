@@ -202,8 +202,7 @@ a {
   background-color: #18cfab;
   color: #fff;
 }
-
-/* .tringle1:after {
+.tringle1:after {
   display: block;
   content: url("../img/Rectangle-3-section.png");
   position: absolute;
@@ -247,7 +246,7 @@ a {
   position: absolute;
   top: 59px;
   right: 84px;
-} */
+}
 
 /* .tabs-title.active::after {
   display: block;
