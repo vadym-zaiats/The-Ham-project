@@ -1,0 +1,141 @@
+.section-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 853px;
+  background: url("../img/section-7-wall.png");
+  padding: 98px 380px 99px 380px;
+}
+
+.section-7-header {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #ffffff;
+  position: relative;
+}
+
+.section-7-header::before {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 60px;
+  left: 241px;
+}
+.section-7-header::after {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 66px;
+  left: 260px;
+}
+
+.section-7-text {
+  text-align: center;
+  margin-top: 175px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: #bbbbbb;
+  position: relative;
+}
+
+.section-7-text::before {
+  display: block;
+  width: 100px;
+  content: url("../img/shape-2474.png");
+  position: absolute;
+  top: -60px;
+  left: 525px;
+}
+.section-7-name {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #18cfab;
+  margin-top: 27px;
+}
+
+.section-7-profession {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  color: #bbbbbb;
+  margin-top: 17px;
+}
+
+.main-photo {
+  margin-top: 55px;
+  border-radius: 100px;
+  border: 11px solid rgba(31, 218, 181, 0.2);
+}
+
+.carousel {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.carousel ul {
+  display: flex;
+  flex-direction: row;
+}
+.carousel-photo {
+  margin: 0 15px;
+  height: 70px;
+  width: 70px;
+  border-radius: 100px;
+  border: 5px solid rgba(31, 218, 181, 0.2);
+}
+
+.carousel-photo:hover {
+  cursor: pointer;
+}
+
+.arrow-back,
+.arrow-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  color: #bbbbbb;
+  height: 31px;
+  width: 31px;
+  border: 1px solid #bbbbbb;
+}
+.arrow-back {
+  margin-right: 15px;
+}
+.arrow-next {
+  margin-left: 15px;
+}
+.arrow-back:hover,
+.arrow-next:hover {
+  background: #18cfab;
+  color: #fff;
+  border: 1px solid #18cfab;
+}
+
+.gallery {
+  width: 370px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery ul {
+  transition: margin-left 250ms;
+}

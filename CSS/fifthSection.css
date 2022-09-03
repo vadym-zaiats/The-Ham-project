@@ -1,0 +1,109 @@
+.section-5 {
+  padding-left: 380px;
+  padding-right: 380px;
+  background: #e9edef;
+  padding: 98px 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.section-5-header {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  color: #4e4e4e;
+}
+.section-5-header::before {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 58px;
+  left: 116px;
+}
+.section-5-header::after {
+  display: block;
+  width: 100px;
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #18cfab;
+  top: 63px;
+  left: 148px;
+}
+
+.section-5-tabs {
+  width: 58%;
+  display: grid;
+  grid-template-columns: 1.5fr 2.5fr 2fr 2.5fr 2fr;
+  margin-top: 90px;
+
+  border: 1px solid #dadada;
+}
+.tabs-section-5 {
+  background-color: #f8fcfe;
+  height: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 39px;
+  color: #717171;
+  border: 1px solid #dadada;
+}
+
+.tabs-section-5.active {
+  border: 1px solid #18cfab;
+  color: #18cfab;
+  cursor: pointer;
+}
+.grid-section-5 {
+  height: 618px;
+  margin-top: 69px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
+.grid-section-5-more {
+  height: 618px;
+  margin-top: 69px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.image-section-5 {
+  width: 100%;
+  height: 100%;
+}
+
+.section-5-button {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 70px;
+  border: none;
+  border-radius: 5px;
+  width: 168px;
+  height: 63px;
+  background: #18cfab;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-5-button:hover {
+  cursor: pointer;
+}
