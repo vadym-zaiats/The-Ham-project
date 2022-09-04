@@ -3,6 +3,7 @@
   padding-left: 380px;
   padding-right: 380px;
   background: url("../img/section-1-wall.jpg");
+  background-attachment: fixed;
   /* */
   display: flex;
   justify-content: center;
@@ -15,6 +16,7 @@
   color: #ffffff;
   text-transform: uppercase;
   font-size: 35px;
+  position: relative;
 }
 
 .h1 {
