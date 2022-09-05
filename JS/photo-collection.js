@@ -1,10 +1,5 @@
 "use strict";
 let button = document.querySelector(".section-5-button");
-console.log(
-  document
-    .querySelector(".grid-section-5 img")
-    .classList.contains("image-section-5")
-);
 
 button.addEventListener("click", () => {
   document
