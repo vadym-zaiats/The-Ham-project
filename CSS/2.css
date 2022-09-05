@@ -1,7 +1,68 @@
+body,
+html {
+  height: 100%;
+  margin: 0px auto;
+  max-width: 1920px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  color: white;
+  position: absolute;
+  max-width: 1920px;
+  top: 0;
+  padding-right: 380px;
+  padding-left: 380px;
+  margin: 0 auto;
+  height: 120px;
+  background: rgba(94, 93, 88, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-list {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding-right: 21px;
+}
+
+.nav-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-item a:hover {
+  color: #18cfab;
+  border-bottom: 2px solid #18cfab;
+}
+
+.green-color {
+  color: #18cfab;
+}
+
 .section-1 {
   height: 1012px;
-  padding-left: 380px;
-  padding-right: 380px;
   background: url("../img/section-1-wall.jpg");
   background-attachment: fixed;
   /* */
@@ -61,6 +122,7 @@
 }
 
 .section-2 {
+  margin-top: 5px;
   max-width: 1920px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

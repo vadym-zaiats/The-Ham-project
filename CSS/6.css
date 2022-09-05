@@ -1,6 +1,6 @@
 .section-6 {
   height: 958px;
-  padding: 84px 380px 130px 380px;
+  margin-top: 84px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@
 }
 
 .grid-6-section {
+  max-width: 1160px;
   width: 100%;
   height: 100%;
   display: grid;
