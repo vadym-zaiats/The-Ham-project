@@ -1,111 +1,46 @@
-.section-3 {
-  /* padding-left: 380px;
-  padding-right: 380px; */
-  width: 1160px;
-  height: 560px;
-  padding: 92px 0;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section-3-header {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 36px;
-  color: #4e4e4e;
-  position: relative;
-}
-.section-3-header::before {
-  display: block;
-  width: 100px;
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #18cfab;
-  top: 59px;
-  left: 66px;
-}
-.section-3-header::after {
-  display: block;
-  width: 100px;
-  content: "";
-  position: absolute;
-  border-bottom: 1px solid #18cfab;
-  top: 65px;
-  left: 98px;
-}
-
-.section-3-tabs {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 17px;
-  position: relative;
-}
-
-.section-3-content {
-  margin-top: 100px;
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-}
-
-.tabs-title {
-  width: 100%;
-  background-color: #f8fcfe;
-  height: 74px;
+.section-4 {
+  height: 476px;
+  background: url("../img/section-4.png");
+  /*  */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   /*  */
   font-family: "Montserrat";
   font-style: normal;
+}
+
+.section-4_text1 {
+  color: #18cfab;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.section-4_text2 {
+  margin-top: 13px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 39px;
-  color: #717171;
-  border: 1px solid #edefef;
+  color: #d8d8d8;
 }
-.tabs-title:hover {
-  border: 1.5px solid #18cfab;
+.purchase-button {
+  margin-top: 69px;
+  border: none;
+  border-radius: 5px;
+  width: 168px;
+  height: 63px;
+  background: #18cfab;
+
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  box-shadow: 0px -5px 0px 0px #ffffff;
+}
+
+.purchase-button:hover {
   cursor: pointer;
-}
-
-.tabs-title.active {
-  background-color: #18cfab;
-  color: #fff;
-  position: relative;
-}
-
-.tabs-title.active::after {
-  display: block;
-  content: url("../img/Rectangle-3-section.png");
-  position: absolute;
-  top: 59px;
-  left: 85px;
-}
-.section-3-content div {
-  display: flex;
-}
-
-.image-section-3 {
-  height: 139px;
-  width: 194px;
-}
-
-.tabs-item {
-  text-align: left;
-  margin-left: 10px;
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
-  color: #777777;
-  display: none;
-}
-
-.tabs-item.active {
-  display: block;
 }

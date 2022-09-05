@@ -1,0 +1,50 @@
+.relative {
+  position: relative;
+}
+.navigation {
+  color: white;
+  max-width: 1920px;
+  top: 0;
+  padding-right: 380px;
+  padding-left: 380px;
+  margin: 0 auto;
+  height: 120px;
+  background: rgba(94, 93, 88, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.nav-list {
+  max-width: 1160px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  padding-right: 21px;
+}
+
+.nav-item a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-item a:hover {
+  color: #18cfab;
+  border-bottom: 2px solid #18cfab;
+}
