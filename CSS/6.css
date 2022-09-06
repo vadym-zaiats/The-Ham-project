@@ -149,7 +149,7 @@
   overflow: hidden;
 }
 .gallery ul {
-  transition: margin-left 700ms;
+  transition: margin-left 400ms;
   display: flex;
   align-items: center;
 }

@@ -1,34 +1,9 @@
 "use strict";
 
-let width = 88; // ширина li в котором картинка
-let list = carousel.querySelector("ul");
-let listElems = carousel.querySelectorAll("li");
-let position = 0; // положение ленты прокрутки
-
-carousel.querySelector(".arrow-back").onclick = function () {
-  if (position === 0) {
-    position = -440;
-  }
-  position += width;
-  list.style.marginLeft = position + "px";
-};
-
-carousel.querySelector(".arrow-next").onclick = function () {
-  if (position === -352) {
-    position = 88;
-  }
-  position -= width;
-  list.style.marginLeft = position + "px";
-};
-//
-//
-//
-//
-//
-
 let persons = document.querySelectorAll(".carousel-photo");
 let items = document.querySelectorAll(".block");
-console.log(items);
+let activeReview = document.querySelector(".text-review .active");
+console.log(activeReview);
 
 persons.forEach((person) => {
   person.addEventListener("click", (e) => {
@@ -51,4 +26,24 @@ persons.forEach((person) => {
     currentItem.classList.add("active");
     currentTab.classList.add("active");
   });
+});
+
+let width = 88; // ширина li в котором картинка
+let list = carousel.querySelector("ul");
+let position = 0; // положение ленты прокрутки
+
+carousel.querySelector(".arrow-back").addEventListener("click", () => {
+  if (position === 0) {
+    position = -440;
+  }
+  position += width;
+  list.style.marginLeft = position + "px";
+});
+
+carousel.querySelector(".arrow-next").addEventListener("click", () => {
+  if (position === -352) {
+    position = 88;
+  }
+  position -= width;
+  list.style.marginLeft = position + "px";
 });
