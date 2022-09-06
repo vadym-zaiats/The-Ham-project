@@ -18,7 +18,7 @@
 }
 .section-5-header::before {
   display: block;
-  width: 100px;
+  width: 90px;
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
@@ -27,7 +27,7 @@
 }
 .section-5-header::after {
   display: block;
-  width: 100px;
+  width: 90px;
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
