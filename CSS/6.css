@@ -10,6 +10,7 @@
   align-items: center;
   width: 1160px;
   margin: 0 auto;
+  position: relative;
 }
 
 .section-7-header {
@@ -18,26 +19,25 @@
   font-weight: 400;
   font-size: 36px;
   color: #ffffff;
-  position: relative;
 }
 
 .section-7-header::before {
   display: block;
-  width: 100px;
+  width: 80px;
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
   top: 60px;
-  left: 241px;
+  left: 530px;
 }
 .section-7-header::after {
   display: block;
-  width: 100px;
+  width: 80px;
   content: "";
   position: absolute;
   border-bottom: 1px solid #18cfab;
   top: 66px;
-  left: 260px;
+  left: 545px;
 }
 
 .section-7-text {
@@ -49,17 +49,28 @@
   font-size: 16px;
   line-height: 30px;
   color: #bbbbbb;
-  position: relative;
 }
 
-.section-7-text::before {
+.width-section-7 ul::before {
   display: block;
   width: 100px;
   content: url("../img/shape-2474.png");
   position: absolute;
-  top: -60px;
-  left: 525px;
+  top: 150px;
+  left: 555px;
 }
+
+.block {
+  display: none;
+}
+
+.block.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-7-name {
   font-family: "Montserrat";
   font-style: normal;
@@ -92,7 +103,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .carousel ul {
   display: flex;
@@ -135,13 +145,19 @@
 }
 
 .gallery {
-  width: 336px;
+  width: 352px;
   overflow: hidden;
 }
 .gallery ul {
-  transition: margin-left 250ms;
+  transition: margin-left 700ms;
+  display: flex;
+  align-items: center;
 }
 
 .gallery li {
-  padding: 0 7px;
+  padding: 0 9px;
+}
+
+.carousel-photo.active {
+  margin-bottom: 25px;
 }
