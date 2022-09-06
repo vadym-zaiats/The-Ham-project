@@ -2,8 +2,6 @@
 
 let persons = document.querySelectorAll(".carousel-photo");
 let items = document.querySelectorAll(".block");
-let activeReview = document.querySelector(".text-review .active");
-console.log(activeReview);
 
 persons.forEach((person) => {
   person.addEventListener("click", (e) => {
@@ -29,10 +27,12 @@ persons.forEach((person) => {
 });
 
 let width = 88; // ширина li в котором картинка
-let list = carousel.querySelector("ul");
+let list = document.querySelector(".gallery ul");
 let position = 0; // положение ленты прокрутки
+let activePerson = document.querySelector(".gallery .active");
+console.log(activePerson.nextElementSibling);
 
-carousel.querySelector(".arrow-back").addEventListener("click", () => {
+document.querySelector(".arrow-back").addEventListener("click", () => {
   if (position === 0) {
     position = -440;
   }
@@ -40,7 +40,7 @@ carousel.querySelector(".arrow-back").addEventListener("click", () => {
   list.style.marginLeft = position + "px";
 });
 
-carousel.querySelector(".arrow-next").addEventListener("click", () => {
+document.querySelector(".arrow-next").addEventListener("click", () => {
   if (position === -352) {
     position = 88;
   }

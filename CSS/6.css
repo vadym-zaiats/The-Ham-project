@@ -133,9 +133,11 @@
 }
 .arrow-back {
   margin-right: 15px;
+  padding-right: 15px;
 }
 .arrow-next {
   margin-left: 15px;
+  padding-left: 10px;
 }
 .arrow-back:hover,
 .arrow-next:hover {

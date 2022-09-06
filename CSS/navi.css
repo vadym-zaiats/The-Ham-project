@@ -1,27 +1,23 @@
-.relative {
-  position: relative;
-}
 .navigation {
   color: white;
-  max-width: 1920px;
-  top: 0;
-  padding-right: 380px;
-  padding-left: 380px;
+  width: 1920px;
   margin: 0 auto;
   height: 120px;
   background: rgba(94, 93, 88, 0.6);
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: absolute;
+  top: 0;
 }
 .nav-list {
-  max-width: 1160px;
+  margin: 0 auto;
+  width: 1160px;
   height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
+  position: relative;
 }
 .nav-item {
   display: flex;
@@ -29,6 +25,11 @@
   align-items: center;
   height: 100%;
   padding-right: 21px;
+}
+
+[src*="/Logo.png"] {
+  position: absolute;
+  left: 0;
 }
 
 .nav-item a {
