@@ -12,21 +12,36 @@ photoCol.addEventListener("click", (e) => {
   let currentItem = e.target; // img
   let itemId = currentItem.getAttribute("data-about"); // #text
   let currentTab = document.querySelector(itemId); // текст персоны
-
+  console.log(currentItem);
+  let active = document.querySelector(".photo-collection-carousel .active");
+  console.log(active);
+  //
   if (currentItem.classList.contains("arrow-back")) {
+    active.parentElement.previousElementSibling
+      .querySelector(".carousel-photo")
+      .classList.add("active");
+
+    active.classList.remove("active");
+
     if (position === 0) {
       position = -440;
     }
     position += width;
     list.style.marginLeft = position + "px";
   } else if (currentItem.classList.contains("arrow-next")) {
+    active.parentElement.nextElementSibling
+      .querySelector(".carousel-photo")
+      .classList.add("active");
+
+    active.classList.remove("active");
     if (position === -352) {
       position = 88;
     }
     position -= width;
     list.style.marginLeft = position + "px";
   }
-
+  //
+  //
   if (
     !currentItem.classList.contains("active") &&
     e.target.closest(".carousel-photo")
@@ -45,19 +60,3 @@ photoCol.addEventListener("click", (e) => {
   currentItem.classList.add("active");
   currentTab.classList.add("active");
 });
-
-// document.querySelector(".arrow-back").addEventListener("click", () => {
-//   if (position === 0) {
-//     position = -440;
-//   }
-//   position += width;
-//   list.style.marginLeft = position + "px";
-// });
-
-// document.querySelector(".arrow-next").addEventListener("click", () => {
-//   if (position === -352) {
-//     position = 88;
-//   }
-//   position -= width;
-//   list.style.marginLeft = position + "px";
-// });
