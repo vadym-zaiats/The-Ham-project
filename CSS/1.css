@@ -2,7 +2,6 @@ body,
 html {
   height: 100%;
   margin: 0px auto;
-  max-width: 1920px;
 }
 
 a {
@@ -19,8 +18,8 @@ a {
 
 .section-1 {
   height: 1012px;
-  background: url("../img/section-1-wall.jpg");
-  background-attachment: fixed;
+  background: url("../img/section-1-wall.jpg") no-repeat center center fixed;
+  background-size: cover;
 
   display: flex;
   justify-content: center;
@@ -77,8 +76,11 @@ a {
 }
 
 .section-2 {
-  margin-top: 5px;
-  max-width: 1920px;
+  margin-top: 2px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.section-2 img {
+  width: 100%;
 }

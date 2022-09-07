@@ -1,6 +1,8 @@
 .section-7 {
   height: 853px;
-  background: url("../img/section-7-wall.png");
+  background: url("../img/section-7-wall.png") no-repeat center center;
+  background-size: cover;
+
   padding: 98px 0;
 }
 
