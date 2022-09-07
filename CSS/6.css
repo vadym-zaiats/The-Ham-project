@@ -152,13 +152,13 @@
   width: 352px;
   overflow: hidden;
 }
-.gallery ul {
+.photo-collection-carousel {
   transition: margin-left 400ms;
   display: flex;
   align-items: center;
 }
 
-.gallery li {
+.photo-collection-carousel li {
   padding: 0 9px;
 }
 

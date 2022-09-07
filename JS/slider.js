@@ -29,7 +29,7 @@ photoCol.addEventListener("click", (e) => {
 });
 
 let width = 88; // ширина li в котором картинка
-let list = document.querySelector(".gallery ul");
+let list = document.querySelector(".photo-collection-carousel");
 let position = 0; // положение ленты прокрутки
 
 document.querySelector(".arrow-back").addEventListener("click", () => {
