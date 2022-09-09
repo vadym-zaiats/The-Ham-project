@@ -18,9 +18,13 @@ photoCol.addEventListener("click", (e) => {
   let currentPerson = document.querySelector(
     ".photo-collection-carousel .active"
   );
-
+  // console.log(currentPerson.parentElement.nextElementSibling.hidden === false);
   //
   if (currentClick.classList.contains("arrow-back")) {
+    // if (currentPerson.parentElement.previousElementSibling.hidden === false) {
+    //   position += width;
+    //   list.style.marginLeft = position + "px";
+    // }
     if (currentPerson.parentElement.previousElementSibling === null) {
       list.style.marginLeft = "-352px";
       firstPhoto.classList.remove("active");
@@ -35,6 +39,11 @@ photoCol.addEventListener("click", (e) => {
   }
 
   if (currentClick.classList.contains("arrow-next")) {
+    // if (currentPerson.parentElement.nextElementSibling.hidden === false) {
+    //   position -= width;
+    //   list.style.marginLeft = position + "px";
+    // }
+
     if (currentPerson.parentElement.nextElementSibling === null) {
       list.style.marginLeft = "0";
       lastPhoto.classList.remove("active");
