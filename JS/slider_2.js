@@ -21,7 +21,7 @@ photoCol.addEventListener("click", (e) => {
   //
   if (currentClick.classList.contains("arrow-back")) {
     if (firstPhoto.classList.contains("active")) {
-      position = -440;
+      list.style.marginLeft = "-352px";
       firstPhoto.classList.remove("active");
       lastPhoto.classList.add("active");
     } else {
@@ -35,7 +35,7 @@ photoCol.addEventListener("click", (e) => {
 
   if (currentClick.classList.contains("arrow-next")) {
     if (lastPhoto.classList.contains("active")) {
-      position = -440;
+      list.style.marginLeft = "0";
       lastPhoto.classList.remove("active");
       firstPhoto.classList.add("active");
     } else {

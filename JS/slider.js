@@ -20,7 +20,6 @@ photoCol.addEventListener("click", (e) => {
   );
   //
   if (currentClick.classList.contains("arrow-back")) {
-
     if (position === 0 && firstPhoto.classList.contains("active")) {
       position = -440;
       position += width;
@@ -28,10 +27,7 @@ photoCol.addEventListener("click", (e) => {
 
       firstPhoto.classList.remove("active");
       lastPhoto.classList.add("active");
-
-    } 
-    
-    else {
+    } else {
       currentPerson.parentElement.previousElementSibling
         .querySelector(".carousel-photo")
         .classList.add("active");
