@@ -15,6 +15,18 @@ button.addEventListener("click", () => {
 const parentEl = document.querySelector(".section-5-tabs");
 const items = document.querySelectorAll(".grid-section-5 img");
 const tabs = document.querySelectorAll(".tabs-section-5");
+let grid = document.querySelector(".grid-section-5");
+
+grid.addEventListener("mouseover", (e) => {
+  let img = e.target;
+  img.setAttribute("src", "./img/hover.png");
+});
+
+grid.addEventListener("mouseout", (e) => {
+  let img = e.target;
+  let startImg = img.getAttribute("data-img");
+  img.setAttribute("src", startImg);
+});
 
 parentEl.addEventListener("click", (item) => {
   let someW = item.target;
