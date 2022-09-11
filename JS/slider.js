@@ -2,57 +2,91 @@
 //
 const photoCol = document.querySelector(".carousel");
 const photos = document.querySelectorAll(".carousel-photo");
-const items = document.querySelectorAll(".block");
-
-let width = 88; // ширина li в котором картинка
+let items = document.querySelectorAll(".block");
 let list = document.querySelector(".photo-collection-carousel");
-let position = 0; // положение ленты прокрутки
-
-const firstPhoto = document.querySelector('[data-about="#text1"]');
-const lastPhoto = document.querySelector('[data-about="#text8"]');
+let firstPhoto = document.querySelector('[data-about="#text1"]');
+let lastPhoto = document.querySelector('[data-about="#text4"]');
 
 photoCol.addEventListener("click", (e) => {
   let currentClick = e.target;
   let itemDataAtt = currentClick.getAttribute("data-about");
   let currentText = document.querySelector(itemDataAtt);
-  let currentPerson = document.querySelector(
-    ".photo-collection-carousel .active"
-  );
-  //
+  // --------------стрелка лево--------------
   if (currentClick.classList.contains("arrow-back")) {
-    if (position === 0 && firstPhoto.classList.contains("active")) {
-      position = -440;
-      position += width;
-      list.style.marginLeft = position + "px";
-
+    let currentPerson = list.querySelector(".active");
+    if (currentPerson.parentElement.previousElementSibling === null) {
+      document.querySelector(".main-photo").src = "./img/section-7/4.png";
       firstPhoto.classList.remove("active");
       lastPhoto.classList.add("active");
+      items.forEach((text) => {
+        text.classList.remove("active");
+      });
+      document.getElementById("text4").classList.add("active");
     } else {
       currentPerson.parentElement.previousElementSibling
         .querySelector(".carousel-photo")
         .classList.add("active");
 
       currentPerson.classList.remove("active");
+
+      document.querySelector(".main-photo").src =
+        currentPerson.parentElement.previousElementSibling
+          .querySelector(".carousel-photo")
+          .getAttribute("src");
+
+      items.forEach((text) => {
+        text.classList.remove("active");
+      });
+
+      document
+        .querySelector(
+          currentPerson.parentElement.previousElementSibling
+            .querySelector(".carousel-photo")
+            .getAttribute("data-about")
+        )
+        .classList.add("active");
     }
   }
-
+  // --------------стрелка право--------------
   if (currentClick.classList.contains("arrow-next")) {
-    // currentPerson.parentElement.nextElementSibling
-    //   .querySelector(".carousel-photo")
-    //   .classList.add("active");
+    let currentPerson = list.querySelector(".active");
+    if (currentPerson.parentElement.nextElementSibling === null) {
+      document.querySelector(".main-photo").src = "./img/section-7/1.png";
+      lastPhoto.classList.remove("active");
+      firstPhoto.classList.add("active");
+      items.forEach((text) => {
+        text.classList.remove("active");
+      });
+      document.getElementById("text1").classList.add("active");
+    } else {
+      currentPerson.parentElement.nextElementSibling
+        .querySelector(".carousel-photo")
+        .classList.add("active");
 
-    // currentPerson.classList.remove("active");
-    if (position === -352) {
-      position = 88;
+      currentPerson.classList.remove("active");
+
+      document.querySelector(".main-photo").src =
+        currentPerson.parentElement.nextElementSibling
+          .querySelector(".carousel-photo")
+          .getAttribute("src");
+
+      items.forEach((text) => {
+        text.classList.remove("active");
+      });
+
+      document
+        .querySelector(
+          currentPerson.parentElement.nextElementSibling
+            .querySelector(".carousel-photo")
+            .getAttribute("data-about")
+        )
+        .classList.add("active");
     }
-    position -= width;
-    list.style.marginLeft = position + "px";
   }
-  //
-  //
+  // --------------по нажатияю на картинку--------------
   if (
     !currentClick.classList.contains("active") &&
-    e.target.closest(".carousel-photo")
+    currentClick.closest(".carousel-photo")
   ) {
     photos.forEach((item) => {
       item.classList.remove("active");
