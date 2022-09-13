@@ -6,7 +6,10 @@ let grid = document.querySelector(".grid-section-5");
 let items;
 
 parentEl.addEventListener("click", (e) => {
-  if (e.target.classList.contains("section-5-button")) {
+  if (
+    e.target.classList.contains("section-5-button") &&
+    document.querySelectorAll(".image-section-5").length == 12
+  ) {
     grid.insertAdjacentHTML(
       "beforeend",
       `<img class="image-section-5 graphic-design" src="./img/b_n/1.png" alt="?" data-img="./img/b_n/1.png" />
@@ -17,21 +20,41 @@ parentEl.addEventListener("click", (e) => {
           <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
           <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
           <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
-          <img class="image-section-5 graphic-design" src="./img/l_p/1.jpg" alt="?" data-img="./img/l_p/1.jpg" />
-          <img class="image-section-5 wordpress" src="./img/l_p/2.jpg" alt="?" data-img="./img/l_p/2.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/l_p/3.jpg" alt="?" data-img="./img/l_p/3.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/l_p/4.jpg" alt="?" data-img="./img/l_p/4.jpg" />`
+          <img class="image-section-5 graphic-design" src="./img/b_n/9.png" alt="?" data-img="./img/l_p/9.jpg" />
+          <img class="image-section-5 wordpress" src="./img/b_n/10.png" alt="?" data-img="./img/l_p/10.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/11.png" alt="?" data-img="./img/l_p/11.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/12.png" alt="?" data-img="./img/l_p/12.jpg" />`
     );
     let activeItemName = document.querySelector(".tabs-section-5.active")
       .dataset.item;
-    console.log(activeItemName);
     items = document.querySelectorAll(".grid-section-5 img");
-    console.log(items);
-
     getStyle(activeItemName);
-
+  } else if (
+    e.target.classList.contains("section-5-button") &&
+    document.querySelectorAll(".image-section-5").length == 24
+  ) {
+    grid.insertAdjacentHTML(
+      "beforeend",
+      `<img class="image-section-5 graphic-design" src="./img/b_n/13.png" alt="?" data-img="./img/b_n/13.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/14.png" alt="?" data-img="./img/b_n/14.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/15.png" alt="?" data-img="./img/b_n/15.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/16.png" alt="?" data-img="./img/b_n/16.png" />
+          <img class="image-section-5 graphic-design" src="./img/b_n/17.png" alt="?" data-img="./img/b_n/17.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/18.png" alt="?" data-img="./img/b_n/19.png" />
+          <img class="image-section-5 graphic-design" src="./img/b_n/19.png" alt="?" data-img="./img/b_n/19.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/20.png" alt="?" data-img="./img/b_n/20.png" />
+          <img class="image-section-5 graphic-design" src="./img/b_n/21.png" alt="?" data-img="./img/l_p/21.jpg" />
+          <img class="image-section-5 wordpress" src="./img/b_n/22.png" alt="?" data-img="./img/l_p/22.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/23.png" alt="?" data-img="./img/l_p/23.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/24.png" alt="?" data-img="./img/l_p/24.jpg" />`
+    );
+    let activeItemName = document.querySelector(".tabs-section-5.active")
+      .dataset.item;
+    items = document.querySelectorAll(".grid-section-5 img");
+    getStyle(activeItemName);
     button.style.visibility = "hidden";
   }
+
   if (e.target.classList.contains("tabs-section-5")) {
     items = document.querySelectorAll(".grid-section-5 img");
     let someW = e.target;
@@ -85,3 +108,30 @@ function getStyle(className) {
       break;
   }
 }
+
+// else if (
+//   e.target.classList.contains("section-5-button") &&
+//   document.querySelectorAll(".image-section-5").length === 36
+// ) {
+//   grid.insertAdjacentHTML(
+//     "beforeend",
+//     `<img class="image-section-5 graphic-design" src="./img/b_n/1.png" alt="?" data-img="./img/b_n/1.png" />
+//         <img class="image-section-5 web-design" src="./img/b_n/2.png" alt="?" data-img="./img/b_n/2.png" />
+//         <img class="image-section-5 web-design" src="./img/b_n/3.png" alt="?" data-img="./img/b_n/3.png" />
+//         <img class="image-section-5 wordpress" src="./img/b_n/4.png" alt="?" data-img="./img/b_n/4.png" />
+//         <img class="image-section-5 graphic-design" src="./img/b_n/5.png" alt="?" data-img="./img/b_n/5.png" />
+//         <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
+//         <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
+//         <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
+//         <img class="image-section-5 graphic-design" src="./img/l_p/1.jpg" alt="?" data-img="./img/l_p/1.jpg" />
+//         <img class="image-section-5 wordpress" src="./img/l_p/2.jpg" alt="?" data-img="./img/l_p/2.jpg" />
+//         <img class="image-section-5 landing-pages" src="./img/l_p/3.jpg" alt="?" data-img="./img/l_p/3.jpg" />
+//         <img class="image-section-5 landing-pages" src="./img/l_p/4.jpg" alt="?" data-img="./img/l_p/4.jpg" />`
+//   );
+//   let activeItemName = document.querySelector(".tabs-section-5.active")
+//     .dataset.item;
+//   items = document.querySelectorAll(".grid-section-5 img");
+//   getStyle(activeItemName);
+
+//   button.style.visibility = "hidden";
+// }
