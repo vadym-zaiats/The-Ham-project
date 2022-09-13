@@ -48,4 +48,5 @@
 .nav-item a:hover {
   color: #18cfab;
   border-bottom: 2px solid #18cfab;
+  transition: 400ms;
 }

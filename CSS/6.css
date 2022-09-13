@@ -120,6 +120,8 @@
 
 .carousel-photo:hover {
   cursor: pointer;
+  margin-bottom: 25px;
+  transition: 700ms;
 }
 
 .arrow-back,
@@ -146,6 +148,7 @@
   background: #18cfab;
   color: #fff;
   border: 1px solid #18cfab;
+  transition: 400ms;
 }
 
 .gallery {
@@ -153,7 +156,7 @@
   overflow: hidden;
 }
 .photo-collection-carousel {
-  transition: margin-left 400ms;
+  transition: margin-left 200ms;
   display: flex;
   align-items: center;
 }

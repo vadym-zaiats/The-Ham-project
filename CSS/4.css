@@ -1,5 +1,4 @@
 .section-5 {
-  height: 1212px;
   padding: 98px 0;
   background: #e9edef;
   display: flex;
@@ -69,7 +68,6 @@
 }
 .grid-section-5 {
   max-width: 1160px;
-  height: 618px;
   margin: 0 380px;
   margin-top: 69px;
   display: grid;
