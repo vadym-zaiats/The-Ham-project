@@ -20,10 +20,10 @@ parentEl.addEventListener("click", (e) => {
           <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
           <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
           <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
-          <img class="image-section-5 graphic-design" src="./img/b_n/9.png" alt="?" data-img="./img/l_p/9.jpg" />
-          <img class="image-section-5 wordpress" src="./img/b_n/10.png" alt="?" data-img="./img/l_p/10.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/b_n/11.png" alt="?" data-img="./img/l_p/11.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/b_n/12.png" alt="?" data-img="./img/l_p/12.jpg" />`
+          <img class="image-section-5 graphic-design" src="./img/b_n/9.png" alt="?" data-img="./img/b_n/9.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/10.png" alt="?" data-img="./img/b_n/10.png" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/11.png" alt="?" data-img="./img/b_n/11.png" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/12.png" alt="?" data-img="./img/b_n/12.png" />`
     );
     let activeItemName = document.querySelector(".tabs-section-5.active")
       .dataset.item;
@@ -40,13 +40,13 @@ parentEl.addEventListener("click", (e) => {
           <img class="image-section-5 web-design" src="./img/b_n/15.png" alt="?" data-img="./img/b_n/15.png" />
           <img class="image-section-5 wordpress" src="./img/b_n/16.png" alt="?" data-img="./img/b_n/16.png" />
           <img class="image-section-5 graphic-design" src="./img/b_n/17.png" alt="?" data-img="./img/b_n/17.png" />
-          <img class="image-section-5 web-design" src="./img/b_n/18.png" alt="?" data-img="./img/b_n/19.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/18.png" alt="?" data-img="./img/b_n/18.png" />
           <img class="image-section-5 graphic-design" src="./img/b_n/19.png" alt="?" data-img="./img/b_n/19.png" />
           <img class="image-section-5 wordpress" src="./img/b_n/20.png" alt="?" data-img="./img/b_n/20.png" />
-          <img class="image-section-5 graphic-design" src="./img/b_n/21.png" alt="?" data-img="./img/l_p/21.jpg" />
-          <img class="image-section-5 wordpress" src="./img/b_n/22.png" alt="?" data-img="./img/l_p/22.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/b_n/23.png" alt="?" data-img="./img/l_p/23.jpg" />
-          <img class="image-section-5 landing-pages" src="./img/b_n/24.png" alt="?" data-img="./img/l_p/24.jpg" />`
+          <img class="image-section-5 graphic-design" src="./img/b_n/21.png" alt="?" data-img="./img/b_n/21.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/22.png" alt="?" data-img="./img/b_n/22.png" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/23.png" alt="?" data-img="./img/b_n/23.png" />
+          <img class="image-section-5 landing-pages" src="./img/b_n/24.png" alt="?" data-img="./img/b_n/24.png" />`
     );
     let activeItemName = document.querySelector(".tabs-section-5.active")
       .dataset.item;
