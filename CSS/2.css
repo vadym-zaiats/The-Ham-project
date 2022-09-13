@@ -70,7 +70,6 @@
 .tabs-title:hover {
   border: 1.5px solid #18cfab;
   cursor: pointer;
-  transition: 800ms;
 }
 
 .tabs-title.active {

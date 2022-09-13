@@ -52,12 +52,10 @@
 }
 .grid-item-6-section:hover .feb-12 {
   background: #18cfab;
-  transition: 400ms;
 }
 
 .grid-item-6-section:hover .item-text-6-section {
   color: #18cfab;
-  transition: 400ms;
 }
 .grid-item-6-section p {
   padding-left: 15px;

@@ -1,15 +1,37 @@
 "use strict";
 let button = document.querySelector(".section-5-button");
-let parentEl = document.querySelector(".section-5-tabs");
-let tabs = document.querySelectorAll(".tabs-section-5");
+
+button.addEventListener("click", () => {
+  document
+    .querySelector(".grid-section-5")
+    .classList.replace("grid-section-5", "grid-section-5-more");
+  document.querySelectorAll(".image-section-5").forEach((e) => {
+    e.classList.replace("image-section-5", "image-section-5-more");
+  });
+
+  button.style.visibility = "hidden";
+});
+
+const parentEl = document.querySelector(".section-5-tabs");
+const items = document.querySelectorAll(".grid-section-5 img");
+const tabs = document.querySelectorAll(".tabs-section-5");
 let grid = document.querySelector(".grid-section-5");
-let items;
+
+grid.addEventListener("mouseover", (e) => {
+  let img = e.target;
+  img.setAttribute("src", "./img/hover.png");
+});
+
+grid.addEventListener("mouseout", (e) => {
+  let img = e.target;
+  let startImg = img.getAttribute("data-img");
+  img.setAttribute("src", startImg);
+});
 
 parentEl.addEventListener("click", (item) => {
-  items = document.querySelectorAll(".grid-section-5 img");
-  console.log(items);
   let someW = item.target;
   let currentItem = item.target.dataset.item;
+  console.log(currentItem);
   if (!someW.classList.contains("active")) {
     tabs.forEach(function (item) {
       item.classList.remove("active");
@@ -19,7 +41,7 @@ parentEl.addEventListener("click", (item) => {
 
   switch (currentItem) {
     case "all":
-      getImages("image-section-5");
+      getImages("image-section-5", "image-section-5-more");
       break;
     case "graphic-design":
       getImages(currentItem);
@@ -36,52 +58,15 @@ parentEl.addEventListener("click", (item) => {
   }
 });
 
-function getImages(className) {
+function getImages(className, className2) {
   items.forEach((item) => {
-    if (!item.classList.contains(className)) {
-      item.style.display = "none";
-    } else {
+    if (
+      item.classList.contains(className) ||
+      item.classList.contains(className2)
+    ) {
       item.style.display = "block";
+    } else {
+      item.style.display = "none";
     }
   });
 }
-
-button.addEventListener("click", () => {
-  grid.insertAdjacentHTML(
-    "beforeend",
-    `<img class="image-section-5 graphic-design" src="./img/b_n/1.png" alt="?" data-img="./img/b_n/1.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/2.png" alt="?" data-img="./img/b_n/2.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/3.png" alt="?" data-img="./img/b_n/3.png" />
-    <img class="image-section-5 wordpress" src="./img/b_n/4.png" alt="?" data-img="./img/b_n/4.png" />
-    <img class="image-section-5 graphic-design" src="./img/b_n/5.png" alt="?" data-img="./img/b_n/5.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
-    <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
-    <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
-    <img class="image-section-5 graphic-design" src="./img/l_p/1.jpg" alt="?" data-img="./img/l_p/1.jpg" />
-    <img class="image-section-5 wordpress" src="./img/l_p/2.jpg" alt="?" data-img="./img/l_p/2.jpg" />
-    <img class="image-section-5 landing-pages" src="./img/l_p/3.jpg" alt="?" data-img="./img/l_p/3.jpg" />
-    <img class="image-section-5 landing-pages" src="./img/l_p/4.jpg" alt="?" data-img="./img/l_p/4.jpg" />`
-  );
-  let activeItemName = document.querySelector(".tabs-section-5.active").dataset
-    .item;
-  items = document.querySelectorAll(".grid-section-5 img");
-  items.forEach((elem) => {
-    if (elem.classList.contains(activeItemName)) {
-      elem.style.display = "block";
-    } else {
-      elem.style.display = "none";
-    }
-  });
-  button.style.visibility = "hidden";
-});
-
-grid.addEventListener("mouseover", (e) => {
-  let img = e.target;
-  img.setAttribute("src", "./img/hover.png");
-});
-
-grid.addEventListener("mouseout", (e) => {
-  let img = e.target;
-  let startImg = img.getAttribute("data-img");
-  img.setAttribute("src", startImg);
-});
