@@ -1,49 +1,49 @@
 "use strict";
 let button = document.querySelector(".section-5-button");
-let parentEl = document.querySelector(".section-5-tabs");
+let parentEl = document.querySelector(".section-5");
 let tabs = document.querySelectorAll(".tabs-section-5");
 let grid = document.querySelector(".grid-section-5");
 let items;
 
-button.addEventListener("click", () => {
-  grid.insertAdjacentHTML(
-    "beforeend",
-    `<img class="image-section-5 graphic-design" src="./img/b_n/1.png" alt="?" data-img="./img/b_n/1.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/2.png" alt="?" data-img="./img/b_n/2.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/3.png" alt="?" data-img="./img/b_n/3.png" />
-    <img class="image-section-5 wordpress" src="./img/b_n/4.png" alt="?" data-img="./img/b_n/4.png" />
-    <img class="image-section-5 graphic-design" src="./img/b_n/5.png" alt="?" data-img="./img/b_n/5.png" />
-    <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
-    <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
-    <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
-    <img class="image-section-5 graphic-design" src="./img/l_p/1.jpg" alt="?" data-img="./img/l_p/1.jpg" />
-    <img class="image-section-5 wordpress" src="./img/l_p/2.jpg" alt="?" data-img="./img/l_p/2.jpg" />
-    <img class="image-section-5 landing-pages" src="./img/l_p/3.jpg" alt="?" data-img="./img/l_p/3.jpg" />
-    <img class="image-section-5 landing-pages" src="./img/l_p/4.jpg" alt="?" data-img="./img/l_p/4.jpg" />`
-  );
-  let activeItemName = document.querySelector(".tabs-section-5.active").dataset
-    .item;
-  console.log(activeItemName);
-  items = document.querySelectorAll(".grid-section-5 img");
-  console.log(items);
+parentEl.addEventListener("click", (e) => {
+  if (e.target.classList.contains("section-5-button")) {
+    grid.insertAdjacentHTML(
+      "beforeend",
+      `<img class="image-section-5 graphic-design" src="./img/b_n/1.png" alt="?" data-img="./img/b_n/1.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/2.png" alt="?" data-img="./img/b_n/2.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/3.png" alt="?" data-img="./img/b_n/3.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/4.png" alt="?" data-img="./img/b_n/4.png" />
+          <img class="image-section-5 graphic-design" src="./img/b_n/5.png" alt="?" data-img="./img/b_n/5.png" />
+          <img class="image-section-5 web-design" src="./img/b_n/6.png" alt="?" data-img="./img/b_n/6.png" />
+          <img class="image-section-5 graphic-design" src="./img/b_n/7.png" alt="?" data-img="./img/b_n/7.png" />
+          <img class="image-section-5 wordpress" src="./img/b_n/8.png" alt="?" data-img="./img/b_n/8.png" />
+          <img class="image-section-5 graphic-design" src="./img/l_p/1.jpg" alt="?" data-img="./img/l_p/1.jpg" />
+          <img class="image-section-5 wordpress" src="./img/l_p/2.jpg" alt="?" data-img="./img/l_p/2.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/l_p/3.jpg" alt="?" data-img="./img/l_p/3.jpg" />
+          <img class="image-section-5 landing-pages" src="./img/l_p/4.jpg" alt="?" data-img="./img/l_p/4.jpg" />`
+    );
+    let activeItemName = document.querySelector(".tabs-section-5.active")
+      .dataset.item;
+    console.log(activeItemName);
+    items = document.querySelectorAll(".grid-section-5 img");
+    console.log(items);
 
-  getStyle(activeItemName);
+    getStyle(activeItemName);
 
-  button.style.visibility = "hidden";
-});
-
-parentEl.addEventListener("click", (item) => {
-  items = document.querySelectorAll(".grid-section-5 img");
-  console.log(items);
-  let someW = item.target;
-  let currentItem = item.target.dataset.item;
-  if (!someW.classList.contains("active")) {
-    tabs.forEach(function (item) {
-      item.classList.remove("active");
-    });
-    someW.classList.add("active");
+    button.style.visibility = "hidden";
   }
-  getStyle(currentItem);
+  if (e.target.classList.contains("tabs-section-5")) {
+    items = document.querySelectorAll(".grid-section-5 img");
+    let someW = e.target;
+    let currentItem = e.target.dataset.item;
+    if (!someW.classList.contains("active")) {
+      tabs.forEach(function (e) {
+        e.classList.remove("active");
+      });
+      someW.classList.add("active");
+    }
+    getStyle(currentItem);
+  }
 });
 
 grid.addEventListener("mouseover", (e) => {
