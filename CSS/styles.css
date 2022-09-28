@@ -1,3 +1,134 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 body,
 html {
   height: 100%;
@@ -44,11 +175,6 @@ html {
   height: 100%;
   padding-right: 21px;
 }
-
-/* [src*="/Logo.png"] {
-  position: absolute;
-  left: 0;
-} */
 
 .nav-item a {
   height: 100%;
@@ -397,7 +523,9 @@ html {
   width: 290px;
   height: 206px;
 }
-
+[src*="load-more.png"] {
+  margin-right: 15px;
+}
 .section-5-button {
   font-family: "Montserrat";
   font-style: normal;
@@ -406,8 +534,7 @@ html {
   margin-top: 70px;
   border: none;
   border-radius: 5px;
-  width: 168px;
-  height: 63px;
+  padding: 22px 23px;
   background: #18cfab;
   text-transform: uppercase;
   color: #ffffff;
@@ -465,7 +592,7 @@ html {
   margin-top: 100px;
 }
 
-.grid-item-6-section {
+.grid-6-section li {
   position: relative;
 }
 .grid-item-6-section:hover {
@@ -549,7 +676,7 @@ html {
   position: absolute;
   border-bottom: 1px solid #18cfab;
   top: 60px;
-  left: 530px;
+  left: 45.5%;
 }
 .section-7-header::after {
   display: block;
@@ -558,7 +685,7 @@ html {
   position: absolute;
   border-bottom: 1px solid #18cfab;
   top: 66px;
-  left: 545px;
+  left: 47%;
 }
 
 .section-7-text {
@@ -578,7 +705,7 @@ html {
   content: url("../img/shape-2474.png");
   position: absolute;
   top: 150px;
-  left: 555px;
+  left: 47.5%;
 }
 
 .block {
