@@ -13,19 +13,23 @@ html {
 }
 
 .navigation {
-  color: white;
   width: 100%;
   margin: 0 auto;
+  color: white;
   height: 120px;
   background: rgba(94, 93, 88, 0.6);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   position: absolute;
   top: 0;
 }
-.nav-list {
-  margin: 0 auto;
+.navigation-width {
+  display: flex;
+  justify-content: space-between;
   width: 1160px;
+  margin: 0 auto;
+}
+.nav-list {
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -41,10 +45,10 @@ html {
   padding-right: 21px;
 }
 
-[src*="/Logo.png"] {
+/* [src*="/Logo.png"] {
   position: absolute;
   left: 0;
-}
+} */
 
 .nav-item a {
   height: 100%;
@@ -102,8 +106,7 @@ html {
 .section-1-buttons {
   border: none;
   border-radius: 5px;
-  width: 168px;
-  height: 63px;
+  padding: 16px 18px;
   background: #18cfab;
   font-family: "Montserrat";
   font-style: normal;
@@ -121,6 +124,7 @@ html {
 
 .button2 {
   background: #00cbf6;
+  padding: 16px 11px;
 }
 
 .section-2 {
@@ -134,8 +138,7 @@ html {
 }
 
 .section-3 {
-  width: 1160px;
-  height: 560px;
+  max-width: 1160px;
   padding: 92px 0;
   margin: 0 auto;
   display: flex;
@@ -292,11 +295,13 @@ html {
   color: #d8d8d8;
 }
 .purchase-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 69px;
   border: none;
   border-radius: 5px;
-  width: 168px;
-  height: 63px;
+  padding: 11px 16px;
   background: #18cfab;
 
   font-weight: 700;
@@ -381,7 +386,6 @@ html {
 }
 .grid-section-5 {
   max-width: 1160px;
-  margin: 0 380px;
   margin-top: 69px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
