@@ -72,7 +72,7 @@
   });
 
   grid.addEventListener("mouseover", (e) => {
-    e.target.setAttribute("src", "./img/hover.png");
+    e.target.setAttribute("src", "./img/Hover.png");
   });
 
   grid.addEventListener("mouseout", (e) => {
